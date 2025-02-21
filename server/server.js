@@ -2,11 +2,7 @@ const dotenv = require('dotenv');
 dotenv.config()
 const express = require('express');
 const connectDB = require('./database/connect');
-const router = require('./routes/auth');
 const contactRoutes = require('./routes/contactRoutes');
-// const jwt = require('jsonwebtoken');
-// const cookieParser = require('cookie-parser');
-const cors = require('cors');
 const app = express()
 const PORT = process.env.PORT
 connectDB();
