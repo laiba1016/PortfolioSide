@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-primary text-white leading-loose;
+  }
+
+  body {
+    @apply bg-primary;
+  }
+
+  .h1 {
+    @apply text-[38px] xl:text-[50px] leading-[1.1] font-semibold;
+  }
+
+  .h2 {
+    @apply text-[36px] xl:text-[38px] leading-[1.1] font-semibold;
+  }
+
+  .h3 {
+    @apply text-[10px] xl:text-[14px] leading-[1.1] font-semibold;
+  }
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px #00ff99;
+}
+
+.text-outline-hover {
+  -webkit-text-stroke: 1px #00ff99;
+}
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-primary bg-primary text-white leading-loose;
+  }
+
+  .h1 {
+    @apply text-[38px] xl:text-[50px] leading-[1.1] font-semibold;
+  }
+
+  .h2 {
+    @apply text-[36px] xl:text-[38px] leading-[1.1] font-semibold;
+  }
+
+  .h3 {
+    @apply text-[10px] xl:text-[14px] leading-[1.1] font-semibold;
+  }
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px #00ff99;
+}
+
+.text-outline-hover {
+  -webkit-text-stroke: 1px #00ff99;
+} */
