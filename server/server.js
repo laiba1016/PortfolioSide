@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors({
     origin: [
         "http://localhost:3000",
-        "https://portfolio-side-two.vercel.app"
+        "https://portfolio-side-one.vercel.app",
     ],
     credentials: true,
 }));
