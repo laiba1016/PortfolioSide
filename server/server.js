@@ -9,7 +9,10 @@ const PORT = process.env.PORT
 connectDB();
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+}));
 app.use('/api', contactRoutes)
 
 app.listen(PORT, console.log(`server is up and listening on port ${PORT}`));
