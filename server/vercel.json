@@ -12,7 +12,7 @@
             "dest": "server.js"
         },
         {
-            "src": "/contact",
+            "src": "/",
             "dest": "server.js"
         }
     ]
