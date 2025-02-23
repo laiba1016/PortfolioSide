@@ -9,15 +9,13 @@ const PORT = process.env.PORT
 connectDB();
 
 app.use(express.json())
-app.use(cors({ origin: "*", credentials: true }));
-
-// app.use(cors({
-//     origin: [
-//         "http://localhost:3000",
-//         "https://portfolio-side-one.vercel.app"
-//     ],
-//     credentials: true,
-// }));
+app.use(cors({
+    origin: [
+        "http://localhost:3000",
+        "https://portfolio-side-two.vercel.app"
+    ],
+    credentials: true,
+}));
 app.use('/api', contactRoutes)
 
 app.listen(PORT, console.log(`server is up and listening on port ${PORT}`));
