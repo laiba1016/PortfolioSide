@@ -19,3 +19,4 @@ app.use(cors({
 app.use('/api', contactRoutes)
 
 app.listen(PORT, console.log(`server is up and listening on port ${PORT}`));
+module.exports = app;
